@@ -69,10 +69,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
         cleanString = cleanString.replace(/\:(.*?)\:/g, "");
         strr = "";
         var str_width = getTextWidth(cleanString, "13px Arial");
-        for (var i = 0; i < parseInt((600 - str_width) / 4 / 4); i++)
+        for (var i = 0; i < parseInt((600 - str_width) / 4.4 / 4.4); i++)
           strr += "⠀";
         strr += sttr_this;
-        document.getElementById("title").value += strr + "\n";
+        document.getElementById("title").value += strr;
       });
     }
   });
